@@ -1,0 +1,47 @@
+﻿<!--
+	Amina Mahmood
+	Client Programming
+	Project 1
+	What Pokemon are you? 
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <title>Project 1</title>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/createForm.js"></script>
+	<script type="text/javascript" src="js/cookie.js"></script>
+	<script>
+		var testIE7 = false;
+	</script>
+	<script type="text/javascript">
+	function moveover()
+	{
+		document.getElementById('image').src="img/Detective_Pikachu2.png";
+		document.getElementById('image').width="250";
+		document.getElementById('image').height="250";
+	}
+	function moveback()
+	{
+		document.getElementById('image').src="img/Detective_Pikachu.png";
+		document.getElementById('image').width="250";
+		document.getElementById('image').height="250";
+	}
+	</script>
+</head>
+<body onload="order()">
+	<div id="header">
+		<h1>What Pokemon are you?</h1>
+		<img id="image" src="img/Detective_Pikachu.png" onmouseover="moveover()" onmouseout="moveback()" width="250" height="250" />
+	</div>
+	<div>
+		<div id="orderPokemon"></div>
+
+		<div id="sendForm"></div>
+	</div>
+</body>
+</html>
